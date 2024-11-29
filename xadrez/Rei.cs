@@ -77,7 +77,7 @@ namespace xadrez
                 mat[pos.linha, pos.coluna] = true;
             }
             //#JogadaEspecial Roque
-            if(qteMovimentos == 0 && !partida.xeque)
+            if (qteMovimentos == 0 && !partida.xeque)
             {
                 //#JogadaEspecial Roque Pequeno
                 Posicao posT1 = new Posicao(posicao.linha, posicao.coluna + 3);
@@ -85,7 +85,7 @@ namespace xadrez
                 {
                     Posicao P1 = new Posicao(posicao.linha, posicao.coluna + 1);
                     Posicao P2 = new Posicao(posicao.linha, posicao.coluna + 2);
-                    if(tab.peca(P1) == null && tab.peca(P2) == null)
+                    if (tab.peca(P1) == null && tab.peca(P2) == null)
                     {
                         mat[posicao.linha, posicao.coluna + 2] = true;
                     }

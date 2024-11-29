@@ -50,10 +50,10 @@ namespace xadrez
                     mat[pos.linha, pos.coluna] = true;
                 }
                 //#JogadaEspecial En Passant
-                if(posicao.linha == 3)
+                if (posicao.linha == 3)
                 {
                     Posicao esquerda = new Posicao(posicao.linha, posicao.coluna - 1);
-                    if(tab.posicaoValida(esquerda) &&  existeInimigo(esquerda) && tab.peca(esquerda) == partida.vulneravelEnPassant)
+                    if (tab.posicaoValida(esquerda) && existeInimigo(esquerda) && tab.peca(esquerda) == partida.vulneravelEnPassant)
                     {
                         mat[esquerda.linha - 1, esquerda.coluna] = true;
                     }
